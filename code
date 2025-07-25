@@ -1,7 +1,7 @@
 #include <Servo.h>
-/*#define threshold 300   // try 250 ,260 and 300 value here 
+#define threshold 300   
 #define unpress_angle 70 
-#define press_angle 36*/
+#define press_angle 36
 int x=0;
 
 Servo myservo;  // create servo object to control a servo
@@ -21,7 +21,7 @@ void loop() {
   if(analogRead(A0)< 44)
  {
   myservo.write(25);          // press the button
-   delay(50);                       // waits 100ms for the servo to reach the position
+   delay(50);                       // waits 50ms for the servo to reach the position
  myservo.write(55); 
    delay(0);             // unpress the button                      
  }}
